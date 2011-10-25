@@ -49,6 +49,23 @@
 	return scene;
 }
 
+- (void)onEnter {
+	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
+	[super onEnter];
+}
+
+- (void)onExit {
+	[[CCTouchDispatcher sharedDispatcher] removeDelegate:self];
+	[super onExit];
+}
+
+- (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    [OpenFeint launchDashboard];
+    return YES;
+}
+
+
 // on "init" you need to initialize your instance
 -(id) init
 {
