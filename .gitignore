@@ -1,0 +1,10 @@
+*/.DS_Store
+.DS_Store
+shamanhealer.xcodeproj/*
+*build/
+
+shaman.ios/shaman.xcodeproj/xcuserdata/matiaspan.xcuserdatad/xcschemes/xcschememanagement.plist
+
+shaman.ios/shaman.xcodeproj/project.xcworkspace/xcuserdata/matiaspan.xcuserdatad/UserInterfaceState.xcuserstate
+
+shaman.ios/shaman.xcodeproj/xcuserdata/matiaspan.xcuserdatad/xcschemes/shaman.xcscheme
