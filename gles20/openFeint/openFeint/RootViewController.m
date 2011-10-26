@@ -12,7 +12,7 @@
 //
 
 #import "cocos2d.h"
-
+#import "OpenFeint.h"
 #import "RootViewController.h"
 
 @implementation RootViewController
@@ -62,6 +62,7 @@
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
 
+    [OpenFeint setDashboardOrientation:toInterfaceOrientation];
 	//
 	// XXX: Is this code needed ???
 	//
